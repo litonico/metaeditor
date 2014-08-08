@@ -1,11 +1,6 @@
 A Formalism for Vim
 ===================
 
-I set out to write an easily-customizable version of Vim, and ended up with
-something that looks a lot like Emacs. _Shit_. (I kid, I kid, I love 
-emacs, though I'm certainly not a power-user. I'll write about how breathtaking
-and elegant emacs is some other time.)
-
 In Vim, all of the commands are hardcoded into their key, which leads to some 
 confusion in the form of things like recursive remapping. 
 
@@ -21,7 +16,7 @@ the 'delete' function:
         [...]
 
 Notice that it takes a motion as an argument; this means `delete` covers
-everything from `'d}'` (delete to end of paragraph) to `'daw'` (delte
+everything from `'d}'` (delete to end of paragraph) to `'daw'` (delete
 around word) just by passing in those motions.
 
     def delete_word(state)
